@@ -1,0 +1,174 @@
+/*  Fonts
+-----
+font-family: 'Lora', serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =================
+Typography
+================= */
+
+
+h1, 
+h2,
+h3 {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+    color: #143774;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+a:hover,
+a:focus{
+    color: red;
+}
+
+
+.article-title {
+    color: #143774;
+    font-family: 'Lora', serif;
+}
+
+
+
+.article-body {
+    color: #707070;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+}
+
+.article-info {
+    font-family: 'Ubuntu', sans-serif;
+    color: #707070;
+}
+
+.article-info{
+    margin: 2em 0;
+}
+
+.subtitle {
+    font-weight: 700;
+    color: #1792d2;
+    font-size: .75rem;
+    margin: 0;
+}
+
+/* =================
+Layout
+================= */
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+header {
+    background: #f8f8f8;
+    padding: 2em 0;
+    text-align: center;
+}
+
+@media (min-width: 675px) {
+    .container-flex{
+        flex-direction: row;
+    }
+    
+    main {
+        width: 75%;
+    }
+    
+    aside {
+        width:20%;
+    }
+
+}
+
+
+
+
+/* navigation */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 2em;
+}
+
+nav a {
+    text-decoration: none;
+    color: #707070;
+    font-weight: 700;
+    padding: .25em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #1792d2;
+}
+
+.current-page {
+    border-bottom: 1px solid #707070;
+}
+
+.current-page:hover {
+    color: #707070;
+}
+
+/* LINKS */
+
+
+.article-link, .article-read-more {
+    color: #1792D2;
+}
+
+.article-read-more {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+@media (max-width: 675px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: .5em 0;
+    }
+}
+
+
+/* articles */
+
+.article-featured{
+    border-bottom: 1px solid gray;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+}
